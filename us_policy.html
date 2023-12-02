@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b27304f563d3fcd7f2b940bc45be626c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_b27304f563d3fcd7f2b940bc45be626c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_b27304f563d3fcd7f2b940bc45be626c = L.map(
+                "map_b27304f563d3fcd7f2b940bc45be626c",
+                {
+                    center: [48.0, -102.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 3,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_aa5fd90baf479a0a2734efd9406faff1 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+                tile_layer_aa5fd90baf479a0a2734efd9406faff1.addTo(map_b27304f563d3fcd7f2b940bc45be626c);
+    
+            var marker_cluster_6730bcb4cbecbdaec8913276cdd51649 = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var circle_marker_2c2c5f51f002db1d92c0145797c3f661 = L.circleMarker(
+                [39.059811, -105.311104],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_e7658711d1e2bbda9550fbbb2bf3d895 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_54069610875e4da720e213c8d375c745 = $(`<div id="html_54069610875e4da720e213c8d375c745" style="width: 100.0%; height: 100.0%;">Policy name: Colorado Regulation No. 7: Control of Ozone Precursors and Control of Hydrocarbons via Oil and Gas Emissions United States of America (2019)<br>                 Subnational region: Colorado<br>                 Sector: Industry<br></div>`)[0];
+                popup_e7658711d1e2bbda9550fbbb2bf3d895.setContent(html_54069610875e4da720e213c8d375c745);
+            
+        
+
+        circle_marker_2c2c5f51f002db1d92c0145797c3f661.bindPopup(popup_e7658711d1e2bbda9550fbbb2bf3d895)
+        ;
+
+        
+    
+    
+            var circle_marker_67ec07feab557a52d20ce51ed4575663 = L.circleMarker(
+                [39.063946, -76.802101],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_2afed5ee02c890ae998a677de55f5b65 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03a5f3625caefea143838992cdebf848 = $(`<div id="html_03a5f3625caefea143838992cdebf848" style="width: 100.0%; height: 100.0%;">Policy name: Maryland Clean Energy Production Tax Credit United States of America (2006)<br>                 Subnational region: Maryland<br>                 Sector: Electricity and heat, Renewables<br></div>`)[0];
+                popup_2afed5ee02c890ae998a677de55f5b65.setContent(html_03a5f3625caefea143838992cdebf848);
+            
+        
+
+        circle_marker_67ec07feab557a52d20ce51ed4575663.bindPopup(popup_2afed5ee02c890ae998a677de55f5b65)
+        ;
+
+        
+    
+    
+            var circle_marker_814f4a4991598281eaaeb22aa169fb9e = L.circleMarker(
+                [40.590752, -77.209755],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_ffc4db4acea4dd8d180dd392bb404c4c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_473601e590b7f2235c4972fa0847ad3f = $(`<div id="html_473601e590b7f2235c4972fa0847ad3f" style="width: 100.0%; height: 100.0%;">Policy name: 2015 IECC with Amendments - State Building Code (Pennsylvania) United States of America (2018)<br>                 Subnational region: Pennsylvania<br>                 Sector: Buildings, Construction<br></div>`)[0];
+                popup_ffc4db4acea4dd8d180dd392bb404c4c.setContent(html_473601e590b7f2235c4972fa0847ad3f);
+            
+        
+
+        circle_marker_814f4a4991598281eaaeb22aa169fb9e.bindPopup(popup_ffc4db4acea4dd8d180dd392bb404c4c)
+        ;
+
+        
+    
+    
+            var circle_marker_fc735ec790b23642aa14770a149d0a96 = L.circleMarker(
+                [40.349457, -88.986137],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_78cc8b571ee098db0bfb8718b52ac0cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a3b6d1af33c625e7c754fd5d9cd293e3 = $(`<div id="html_a3b6d1af33c625e7c754fd5d9cd293e3" style="width: 100.0%; height: 100.0%;">Policy name: Renewable and Energy efficiency Portfolio Standard -- Illinois United States of America (2007)<br>                 Subnational region: Illinois<br>                 Sector: Electricity and heat<br></div>`)[0];
+                popup_78cc8b571ee098db0bfb8718b52ac0cd.setContent(html_a3b6d1af33c625e7c754fd5d9cd293e3);
+            
+        
+
+        circle_marker_fc735ec790b23642aa14770a149d0a96.bindPopup(popup_78cc8b571ee098db0bfb8718b52ac0cd)
+        ;
+
+        
+    
+    
+            var circle_marker_c1363459ea7757ef1b3fa0a6e27f9386 = L.circleMarker(
+                [36.116203, -119.681564],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_da6fdbb869a2d1f66d48f1fd8d935275 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a2f939eb4f75d6a9f2c57fa3dc369771 = $(`<div id="html_a2f939eb4f75d6a9f2c57fa3dc369771" style="width: 100.0%; height: 100.0%;">Policy name: Self-Generation Incentive Program - California United States of America (2003)<br>                 Subnational region: California<br>                 Sector: Electricity and heat, Renewables<br></div>`)[0];
+                popup_da6fdbb869a2d1f66d48f1fd8d935275.setContent(html_a2f939eb4f75d6a9f2c57fa3dc369771);
+            
+        
+
+        circle_marker_c1363459ea7757ef1b3fa0a6e27f9386.bindPopup(popup_da6fdbb869a2d1f66d48f1fd8d935275)
+        ;
+
+        
+    
+    
+            var circle_marker_7976ad1747bbee3d088452cc47bdde55 = L.circleMarker(
+                [42.230171, -71.530106],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_116849d00ae91e3e8d82a189ace23e2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e300300b2e3e29760da63989db6bce06 = $(`<div id="html_e300300b2e3e29760da63989db6bce06" style="width: 100.0%; height: 100.0%;">Policy name: 2015 IECC with Amendments (Massachusetts) United States of America (2017)<br>                 Subnational region: Massachusetts<br>                 Sector: Buildings, Construction<br></div>`)[0];
+                popup_116849d00ae91e3e8d82a189ace23e2b.setContent(html_e300300b2e3e29760da63989db6bce06);
+            
+        
+
+        circle_marker_7976ad1747bbee3d088452cc47bdde55.bindPopup(popup_116849d00ae91e3e8d82a189ace23e2b)
+        ;
+
+        
+    
+    
+            var circle_marker_e4926d21a1046f3f6a9525d63f6ff099 = L.circleMarker(
+                [38.313515, -117.055374],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_34fcd07adf37e36c648b3b0788e60197 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3b4cee127b08d23f567f5ec832579109 = $(`<div id="html_3b4cee127b08d23f567f5ec832579109" style="width: 100.0%; height: 100.0%;">Policy name: Renewable Portfolio Standard -- Nevada United States of America (2005)<br>                 Subnational region: Nevada<br>                 Sector: Electricity and heat, Renewables<br></div>`)[0];
+                popup_34fcd07adf37e36c648b3b0788e60197.setContent(html_3b4cee127b08d23f567f5ec832579109);
+            
+        
+
+        circle_marker_e4926d21a1046f3f6a9525d63f6ff099.bindPopup(popup_34fcd07adf37e36c648b3b0788e60197)
+        ;
+
+        
+    
+    
+            var circle_marker_9e653d4f7104f4713ece291422228ee8 = L.circleMarker(
+                [36.116203, -119.681564],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_c780e21d3f32c7f83fedb88338697495 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12a70b1f6a98d286ff83ff8fafbaaa16 = $(`<div id="html_12a70b1f6a98d286ff83ff8fafbaaa16" style="width: 100.0%; height: 100.0%;">Policy name: Zero-Emission Vehicle Investment Initiative United States of America (2018)<br>                 Subnational region: California<br>                 Sector: Transport, Low-emissions mobility, Light-duty vehicles<br></div>`)[0];
+                popup_c780e21d3f32c7f83fedb88338697495.setContent(html_12a70b1f6a98d286ff83ff8fafbaaa16);
+            
+        
+
+        circle_marker_9e653d4f7104f4713ece291422228ee8.bindPopup(popup_c780e21d3f32c7f83fedb88338697495)
+        ;
+
+        
+    
+    
+            var circle_marker_6b7852621a75fc6ecbbbcddcfe298881 = L.circleMarker(
+                [37.769337, -78.169968],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_5286be0b1f6d5982a808b939c86dde80 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b473a927bb3e3cfffef8f6fb514d84c7 = $(`<div id="html_b473a927bb3e3cfffef8f6fb514d84c7" style="width: 100.0%; height: 100.0%;">Policy name: 2015 IECC with Amendments - Residential Building code (Virginia) United States of America (2018)<br>                 Subnational region: Virginia<br>                 Sector: Buildings, Construction<br></div>`)[0];
+                popup_5286be0b1f6d5982a808b939c86dde80.setContent(html_b473a927bb3e3cfffef8f6fb514d84c7);
+            
+        
+
+        circle_marker_6b7852621a75fc6ecbbbcddcfe298881.bindPopup(popup_5286be0b1f6d5982a808b939c86dde80)
+        ;
+
+        
+    
+    
+            var circle_marker_d0ba7f904ababf58fd9ca6601860cc21 = L.circleMarker(
+                [36.116203, -119.681564],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_fda6397e14ecff22226922f23a66214c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bf84f7932fdce4f4ef94c3f3e9386d7a = $(`<div id="html_bf84f7932fdce4f4ef94c3f3e9386d7a" style="width: 100.0%; height: 100.0%;">Policy name: Advanced Clean Cars Program United States of America (2012)<br>                 Subnational region: California<br>                 Sector: Transport, Light-duty vehicles<br></div>`)[0];
+                popup_fda6397e14ecff22226922f23a66214c.setContent(html_bf84f7932fdce4f4ef94c3f3e9386d7a);
+            
+        
+
+        circle_marker_d0ba7f904ababf58fd9ca6601860cc21.bindPopup(popup_fda6397e14ecff22226922f23a66214c)
+        ;
+
+        
+    
+    
+            var circle_marker_0d4421a7691c9308577e453ea78021cb = L.circleMarker(
+                [43.452492, -71.563896],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_84a2f0f6ea8fbbeae545010ff261787f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_25375fe25b399846357ded92f75e70ab = $(`<div id="html_25375fe25b399846357ded92f75e70ab" style="width: 100.0%; height: 100.0%;">Policy name: Energy Efficiency Obligation (New Hampshire) United States of America (2018)<br>                 Subnational region: New Hampshire<br>                 Sector: Buildings, Industry<br></div>`)[0];
+                popup_84a2f0f6ea8fbbeae545010ff261787f.setContent(html_25375fe25b399846357ded92f75e70ab);
+            
+        
+
+        circle_marker_0d4421a7691c9308577e453ea78021cb.bindPopup(popup_84a2f0f6ea8fbbeae545010ff261787f)
+        ;
+
+        
+    
+    
+            var circle_marker_42e741ce3882e429705a7b1cb08d0a12 = L.circleMarker(
+                [40.590752, -77.209755],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_c188f369664373d82ab2a82518012fb3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_74affea9f445a78bce247077e64b4064 = $(`<div id="html_74affea9f445a78bce247077e64b4064" style="width: 100.0%; height: 100.0%;">Policy name: 2015 IECC with Amendments (Pennsylvania) United States of America (2018)<br>                 Subnational region: Pennsylvania<br>                 Sector: Buildings, Construction<br></div>`)[0];
+                popup_c188f369664373d82ab2a82518012fb3.setContent(html_74affea9f445a78bce247077e64b4064);
+            
+        
+
+        circle_marker_42e741ce3882e429705a7b1cb08d0a12.bindPopup(popup_c188f369664373d82ab2a82518012fb3)
+        ;
+
+        
+    
+    
+            var circle_marker_9d511b2679f2b2d319c3a6f91f43ba3e = L.circleMarker(
+                [39.059811, -105.311104],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_e11991aefb701921591c35316c855617 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20c5359b98744103c6b058923798da92 = $(`<div id="html_20c5359b98744103c6b058923798da92" style="width: 100.0%; height: 100.0%;">Policy name: Colorado Senate Bill 19-181 United States of America (2019)<br>                 Subnational region: Colorado<br>                 Sector: Industry, Fossil fuel exploration and production<br></div>`)[0];
+                popup_e11991aefb701921591c35316c855617.setContent(html_20c5359b98744103c6b058923798da92);
+            
+        
+
+        circle_marker_9d511b2679f2b2d319c3a6f91f43ba3e.bindPopup(popup_e11991aefb701921591c35316c855617)
+        ;
+
+        
+    
+    
+            var circle_marker_6aaf320927effe74192667f26f6a81d2 = L.circleMarker(
+                [40.298904, -74.521011],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_ecb110b3dab4bffd439a1e4102c065d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ec5ebd33e2185afa6cff006206b534b3 = $(`<div id="html_ec5ebd33e2185afa6cff006206b534b3" style="width: 100.0%; height: 100.0%;">Policy name: Energy Efficiency Obligation (New Jersey) United States of America (2018)<br>                 Subnational region: New Jersey<br>                 Sector: Buildings, Industry<br></div>`)[0];
+                popup_ecb110b3dab4bffd439a1e4102c065d5.setContent(html_ec5ebd33e2185afa6cff006206b534b3);
+            
+        
+
+        circle_marker_6aaf320927effe74192667f26f6a81d2.bindPopup(popup_ecb110b3dab4bffd439a1e4102c065d5)
+        ;
+
+        
+    
+    
+            var circle_marker_3ba453fd474d043dbcc15f8852848bae = L.circleMarker(
+                [37.769337, -78.169968],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_27355f2ba57436f2311fff350a2495c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fda5d8e38cb062ca73aaca6a5bf2384b = $(`<div id="html_fda5d8e38cb062ca73aaca6a5bf2384b" style="width: 100.0%; height: 100.0%;">Policy name: 2015 IECC with Amendments - Commercial Building Code (Virginia) United States of America (2018)<br>                 Subnational region: Virginia<br>                 Sector: Buildings, Construction<br></div>`)[0];
+                popup_27355f2ba57436f2311fff350a2495c2.setContent(html_fda5d8e38cb062ca73aaca6a5bf2384b);
+            
+        
+
+        circle_marker_3ba453fd474d043dbcc15f8852848bae.bindPopup(popup_27355f2ba57436f2311fff350a2495c2)
+        ;
+
+        
+    
+    
+            var circle_marker_c888a4752dfa853bb9ca0a571e3bbec5 = L.circleMarker(
+                [21.094318, -157.498337],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_fa82a64fcd19d183db6510d6335bc19f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_278b37154849017ab5e7b888f7e4da91 = $(`<div id="html_278b37154849017ab5e7b888f7e4da91" style="width: 100.0%; height: 100.0%;">Policy name: Hawaii Energy Code (HEC) United States of America (2015)<br>                 Subnational region: Hawaii<br>                 Sector: Buildings, Construction<br></div>`)[0];
+                popup_fa82a64fcd19d183db6510d6335bc19f.setContent(html_278b37154849017ab5e7b888f7e4da91);
+            
+        
+
+        circle_marker_c888a4752dfa853bb9ca0a571e3bbec5.bindPopup(popup_fa82a64fcd19d183db6510d6335bc19f)
+        ;
+
+        
+    
+    
+            var circle_marker_8909eba637c5f8e456de375244398cdb = L.circleMarker(
+                [39.059811, -105.311104],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_435767a51bcb1bf0300f6a4cbb8ab6e1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f012ebbf3981a901ceb29488dd5bee20 = $(`<div id="html_f012ebbf3981a901ceb29488dd5bee20" style="width: 100.0%; height: 100.0%;">Policy name: Renewable Portfolio Standard -- Colorado United States of America (2004)<br>                 Subnational region: Colorado<br>                 Sector: Electricity and heat, Renewables<br></div>`)[0];
+                popup_435767a51bcb1bf0300f6a4cbb8ab6e1.setContent(html_f012ebbf3981a901ceb29488dd5bee20);
+            
+        
+
+        circle_marker_8909eba637c5f8e456de375244398cdb.bindPopup(popup_435767a51bcb1bf0300f6a4cbb8ab6e1)
+        ;
+
+        
+    
+    
+            var circle_marker_9230099b9675f95da0382cc43a08e17f = L.circleMarker(
+                [35.630066, -79.806419],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_b1eb4d73e67b030c82c5f9fc9f5c0ca7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4afa398b6f37de7287dbf8df93b4f401 = $(`<div id="html_4afa398b6f37de7287dbf8df93b4f401" style="width: 100.0%; height: 100.0%;">Policy name: North Carolina Commercial Building Code United States of America (2019)<br>                 Subnational region: North Carolina<br>                 Sector: Buildings, Construction<br></div>`)[0];
+                popup_b1eb4d73e67b030c82c5f9fc9f5c0ca7.setContent(html_4afa398b6f37de7287dbf8df93b4f401);
+            
+        
+
+        circle_marker_9230099b9675f95da0382cc43a08e17f.bindPopup(popup_b1eb4d73e67b030c82c5f9fc9f5c0ca7)
+        ;
+
+        
+    
+    
+            var circle_marker_695ede05b6987b48d3c2ba40630358ba = L.circleMarker(
+                [40.298904, -74.521011],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_539214c9ccd44a6f75c500011386bfe0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_660d8fc5abe123b3480d44d5ccab4b39 = $(`<div id="html_660d8fc5abe123b3480d44d5ccab4b39" style="width: 100.0%; height: 100.0%;">Policy name: New Jersey Voluntary Agreement with State Power Plant Operator United States of America (2002)<br>                 Subnational region: New Jersey<br>                 Sector: Electricity and heat<br></div>`)[0];
+                popup_539214c9ccd44a6f75c500011386bfe0.setContent(html_660d8fc5abe123b3480d44d5ccab4b39);
+            
+        
+
+        circle_marker_695ede05b6987b48d3c2ba40630358ba.bindPopup(popup_539214c9ccd44a6f75c500011386bfe0)
+        ;
+
+        
+    
+    
+            var circle_marker_b8cfdc68bd81f350f0e6f36de472ddc1 = L.circleMarker(
+                [36.116203, -119.681564],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_0b692e504522025d71f12efd64832cd1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1c8a3d272c0a653a505c58ca0e347ce = $(`<div id="html_b1c8a3d272c0a653a505c58ca0e347ce" style="width: 100.0%; height: 100.0%;">Policy name: California Climate Action Registry United States of America (2001)<br>                 Subnational region: California<br>                 Sector: General<br></div>`)[0];
+                popup_0b692e504522025d71f12efd64832cd1.setContent(html_b1c8a3d272c0a653a505c58ca0e347ce);
+            
+        
+
+        circle_marker_b8cfdc68bd81f350f0e6f36de472ddc1.bindPopup(popup_0b692e504522025d71f12efd64832cd1)
+        ;
+
+        
+    
+    
+            var circle_marker_d824f678c50b75132933725344ca0bde = L.circleMarker(
+                [42.165726, -74.948051],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_13df4b00d01d02e1416481c2a50b1d15 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1269a004cb44743a8dfe6e113c2f50dc = $(`<div id="html_1269a004cb44743a8dfe6e113c2f50dc" style="width: 100.0%; height: 100.0%;">Policy name: New York State Energy Plan United States of America (2002)<br>                 Subnational region: New York<br>                 Sector: Electricity and heat<br></div>`)[0];
+                popup_13df4b00d01d02e1416481c2a50b1d15.setContent(html_1269a004cb44743a8dfe6e113c2f50dc);
+            
+        
+
+        circle_marker_d824f678c50b75132933725344ca0bde.bindPopup(popup_13df4b00d01d02e1416481c2a50b1d15)
+        ;
+
+        
+    
+    
+            var circle_marker_e475ca0c9c9d11a05f6c307c7d44d517 = L.circleMarker(
+                [42.230171, -71.530106],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_8e251f6081a638377a7622fce9b701e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a5448e68a91bcc0b8ce109cf1afea188 = $(`<div id="html_a5448e68a91bcc0b8ce109cf1afea188" style="width: 100.0%; height: 100.0%;">Policy name: Renewable Portfolio Standard -- Massachusetts United States of America (1997)<br>                 Subnational region: Massachusetts<br>                 Sector: Electricity and heat, Renewables<br></div>`)[0];
+                popup_8e251f6081a638377a7622fce9b701e8.setContent(html_a5448e68a91bcc0b8ce109cf1afea188);
+            
+        
+
+        circle_marker_e475ca0c9c9d11a05f6c307c7d44d517.bindPopup(popup_8e251f6081a638377a7622fce9b701e8)
+        ;
+
+        
+    
+    
+            var circle_marker_e9bfd9e3e0c663ce9d42bab5a4e3f533 = L.circleMarker(
+                [36.116203, -119.681564],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_d57446504767f8f4ece441aee2b7436c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f71c718310f67b75063c26e84f91eae = $(`<div id="html_4f71c718310f67b75063c26e84f91eae" style="width: 100.0%; height: 100.0%;">Policy name: Renewable Portfolio Standard -- California United States of America (2002)<br>                 Subnational region: California<br>                 Sector: Electricity and heat, Renewables<br></div>`)[0];
+                popup_d57446504767f8f4ece441aee2b7436c.setContent(html_4f71c718310f67b75063c26e84f91eae);
+            
+        
+
+        circle_marker_e9bfd9e3e0c663ce9d42bab5a4e3f533.bindPopup(popup_d57446504767f8f4ece441aee2b7436c)
+        ;
+
+        
+    
+    
+            var circle_marker_ac8e1f2d75e8841fc497feab9cbabe47 = L.circleMarker(
+                [43.452492, -71.563896],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_10495b2e7d3df42d6c41a772f263da74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9014ce5b10d1a7c00ba57d29def8a1c9 = $(`<div id="html_9014ce5b10d1a7c00ba57d29def8a1c9" style="width: 100.0%; height: 100.0%;">Policy name: New Hampshire Emissions reductions from Power Plants United States of America (2002)<br>                 Subnational region: New Hampshire<br>                 Sector: General<br></div>`)[0];
+                popup_10495b2e7d3df42d6c41a772f263da74.setContent(html_9014ce5b10d1a7c00ba57d29def8a1c9);
+            
+        
+
+        circle_marker_ac8e1f2d75e8841fc497feab9cbabe47.bindPopup(popup_10495b2e7d3df42d6c41a772f263da74)
+        ;
+
+        
+    
+    
+            var circle_marker_bf9fc76358a5cf7106f067fff1895707 = L.circleMarker(
+                [38.313515, -117.055374],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_6730bcb4cbecbdaec8913276cdd51649);
+        
+    
+        var popup_2d383d886cd7df8832a1a7a5896c2798 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a046d8ef558cd876b7136f0e40562929 = $(`<div id="html_a046d8ef558cd876b7136f0e40562929" style="width: 100.0%; height: 100.0%;">Policy name: State Building Code (Nevada) United States of America (2018)<br>                 Subnational region: Nevada<br>                 Sector: Buildings, Construction<br></div>`)[0];
+                popup_2d383d886cd7df8832a1a7a5896c2798.setContent(html_a046d8ef558cd876b7136f0e40562929);
+            
+        
+
+        circle_marker_bf9fc76358a5cf7106f067fff1895707.bindPopup(popup_2d383d886cd7df8832a1a7a5896c2798)
+        ;
+
+        
+    
+    
+                marker_cluster_6730bcb4cbecbdaec8913276cdd51649.addTo(map_b27304f563d3fcd7f2b940bc45be626c);
+</script>
+</html>
